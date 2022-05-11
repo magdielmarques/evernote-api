@@ -18,7 +18,7 @@ API with Mongo DB.
 4. Minimum Planning of project
 6. CORS
 
-## Steps to run the project:
+## Steps to run the project
 1. run **npm i** to install all dependencies  
 2. run **npm run dev** to start the project    
 
