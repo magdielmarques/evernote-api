@@ -37,6 +37,27 @@ router.get('/:id', withAuth, async (req, res) => {
   }
 })
 
+router.put('/:id', withAuth, async (req, res) => {
+  const { title, body } = req.body;
+  const { id } = req.params;
+
+  try {
+    let note = await Note.findById(id);
+    if (isOwner(req.user, note)) {
+      let note = await Note.findByIdAndUpdate(id,
+        { $set: { title: title, body: body } }, // operator of mongo db used to update the propety
+        { upsert: true, 'new': true } // is used to return object updated
+      );
+
+      res.json(note);
+    } else
+      res.status(403).json({ error: 'Permission denied' });
+
+  } catch (error) {
+    res.status(500).json({ error: 'Problem to update a note' });
+  }
+})
+
 const isOwner = (user, note) => {
   if (JSON.stringify(user._id) == JSON.stringify(note.author._id))
     return true;
