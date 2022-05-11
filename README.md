@@ -6,9 +6,10 @@ API with Mongo DB.
 
 ## Utilized Tech Stack
 1. JavaScript
-2. Express
-3. MongoDB
-4. Mongoose
+2. NodeJs
+3. Express
+4. MongoDB
+5. Mongoose
 
 ## Utilized Concepts  
 1. CRUD 
