@@ -1,5 +1,5 @@
 ![Logo da EVERNOTE](https://cdn1.iconfinder.com/data/icons/social-media-vol-2/24/_evernote-128.png)
-# evernote-api
+# clone-evernote-api
 API with Mongo DB. 
 ## About Project
  >An API created to pratice important concepts of server side.
