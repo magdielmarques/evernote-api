@@ -30,5 +30,5 @@ _Create Note_    ``` http://localhost:3000/notes/ ```
 _Show Note_      ``` http://localhost:3000/notes/:id ```   
 _Show All Notes_ ``` http://localhost:3000/notes/ ```   
 _Update Note_   ``` http://localhost:3000/notes/:id ```    
-_Search Note_    ``` http://localhost:3000/notes/search/?query=exemplo```   
+_Search Note_    ``` http://localhost:3000/notes/search/?query=example```   
 _Delete Note_   ``` http://localhost:3000/notes/:id ```    
